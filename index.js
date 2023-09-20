@@ -79,6 +79,21 @@ $(".btn").on("click",function(){
     
         },1000);
     }
+    else if(answer==0){
+
+        $("body").addClass("game-over");
+        setTimeout(function(){
+            $("body").removeClass("game-over");
+        },500);
+
+      
+        $("#level-title").text("Game-Over, press a to try again ");
+        playing=false;
+        gamePattern=[];
+        level=0;
+
+
+    }
 
 
 
